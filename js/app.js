@@ -45,6 +45,8 @@ function validarCampo() {
         if(errores.length === 0) {
             btnEnviar.disabled = false;
         }
+    } else {
+        btnEnviar.disabled = true;
     }
 }
 
