@@ -92,7 +92,6 @@ function enviarEmail(e) {
 
 // Verifica la longitud del texto en los campos
 function validarLongitud(campo) {
-    console.log(campo.value.length);
 
     if(campo.value.length > 0) {
         campo.style.borderBottomColor = 'green';
