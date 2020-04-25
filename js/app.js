@@ -104,7 +104,7 @@ function validarLongitud(campo) {
 
 function validarEmail(campo) {
     const mensaje = campo.value;
-    if(mensaje.indexOf('@') !== -1) {
+    if(/^[^@]+@[^@]+\.[a-zA-Z]{2,}$/.test(mensaje)) {
         campo.style.borderBottomColor = 'green';
         campo.classList.remove('error');
     } else {
